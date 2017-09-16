@@ -1,0 +1,99 @@
+
+Historial de versiones del documento
+Versión	Fecha	Descripción	Autor
+1.0	06/09/2017	Creación del documento, Definición de objetivo, alcance beneficios y requisitos funcionales por modulo.	Federico Krawiec
+1.1	16/09/2017	Modificación de requisitos, alcance, requisitos no funcionales.	Roa Nelson
+			
+			
+			
+
+TABLA DE CONTENIDOS
+1.	OBJETIVO
+2.	BENEFICIOS
+3.	ALCANCE
+4.	LIMITACIONES
+5.	REQUISITOS NO FUNCIONALES GLOBALES
+6.	MODULOS
+6.1.	Login
+6.2.	Registros.
+6.3.	Menú.
+6.4.	Mesas.
+6.5.	Pedido.
+7.	PROTOTIPO DE INTERFAZ
+8.	GLOSARIO
+1.	Objetivo
+Los clientes de los distintos restaurantes podrán acceder al menú desde su teléfono móvil y visualizar el menú así mismo poder realizar el pedido el cual será directamente enviado a una aplicación web que tendrá el administrador del restaurante el que previamente ha cargado en el sistema el ya nombrado menú con sus precios correspondientes.
+2.	Beneficios
+•	Se agilizara la toma de los pedidos, de tal modo que el mozo no deberá llevar el menú a cada una de las mesas, solo le deberá acercar el código para que los comensales puedan acceder al menú y realizar el pedido.
+•	Es de público conocimiento que en muchas ocasiones en algunos bares / restaurantes, los pedidos se mezclan por información errónea del mozo a el/los cocineros, con esta app se evitara, ya que los pedidos estarían registrados y se podrán visualizar automáticamente desde la app web.
+•	Se reducirá la cantidad de personal, no se necesitarían una gran cantidad de mozos, ya que el mozo solo deberá entregar el token de la mesa en la que se sentaron los comensales y luego llevarles el pedido una vez esté listo.
+•	Facilidad a la hora de revisar la cuenta, ya que uno en su aplicación tendrá un registro del gasto.
+•	A la hora de llamar al mozo como de pedir la cuenta, ya no se necesitara estar rastreándolo ya que con la app se lo podrá llamar para hacerle algún pedido especial o mismo pedir directamente la cuenta al administrador del restaurante.
+3.	Alcance
+•	El administrador registra en el sistema los datos del restaurante, los datos de los mozos, datos el menú, y las mesas disponibles.
+•	El administrador puede visualizar el pedido realizado por los comensales.
+•	El administrador abre la mesa que fue ocupada por un comensal y genera un token para esa mesa.
+•	El administrador cierra la mesa una vez el comensal se ha retirado.
+•	El administrador confirma el pedido brindándole un token al comensal que debe ser ingresado en la app.
+•	El comensal dispone de la carta del restaurante una vez haya descargado la app.
+•	El comensal podrá realizar, modificar o cancelar el pedido.
+•	El comensal podrá llamar al mozo, pedir la cuenta, calificar al restaurante. 
+•	La app detectara, mediante geo-localización, en que restaurante se encuentra la persona.
+•	Una vez confirmado el pedido, el comensal puede en cualquier momento evaluar los platos pedidos poniéndole un puntaje.
+4.	Limitaciones
+•	La app Mobile que utilizara el comensal no será compatible con versiones de Android inferiores a la versión 4.2.
+•	La app Mobile no será compatible con IOS.
+•	La app no será capaz de generar facturas.
+•	La app no es capaz de realizar pedidos fuera del restaurante en el cual se encuentra.
+
+5.	Requisitos no funcionales globales
+•	RNF01. La app Mobile debe funcionar en Android 4.2 o superiores.
+6.	Módulos 
+6.1.	Login
+6.1.1.	Requisitos funcionales
+•	RFC01. El administrador se registra en el sistema con los datos de registro. 
+•	RFC02. El administrador ingresa en el sistema con su e-mail y su contraseña.
+6.1.2.	Requisitos No Funcionales
+•	No aplica
+6.2.	Registros.
+6.2.1.	Requisitos Funcionales
+•	RFC03. El administrador debe registrar el restaurante con los datos del establecimiento. 
+•	RFC04. El administrador puede modificar datos del establecimiento. 
+•	RFC05. El administrador puede eliminar el restaurante del sistema.
+•	RFCO6. El administrador registra los datos de los mozos. 
+•	RFC06. El administrador puede modificar los datos de los mozos.
+•	RFC08. El administrador  puede eliminar del sistema a un mozo.
+6.2.2.	Requisitos No Funcionales.
+6.3.	 Menú.
+6.3.1.	Requisitos Funcionales.
+•	RFC08. El administrador debe cargar en el sistema el menú del restaurante con los datos del menú. 
+•	RFC09. El administrador puede modificar los datos del menú. 
+•	RFC10. El administrador puede eliminar un plato del menú.
+6.4.	Mesas.
+6.4.1.	Requisitos Funcionales.
+•	RFC11. El administrador debe registrar las mesas disponibles con los datos de las mesas.
+•	RFC12. El administrador puede modificar los datos de las mesas.
+•	RFC13. El administrador puede eliminar mesas.
+•	RFC14. El administrador da de alta una mesa. 
+•	RFC15. El administrador debe cerrar la mesa una vez que el comensal se retiró de la misma.
+6.4.2.	Requisitos No Funcionales.
+6.5.	Pedido.
+6.5.1.	Requisitos Funcionales.
+•	RFC16. El comensal debe ingresar el token en su aplicación para confirmar el pedido.
+•	RFC17. El comensal debe visualizar el menú de la siguiente manera: Nombre del plato – Precio.
+•	RFC18. El comensal selecciona los platos que desea pedir deslizando.
+•	RFC19. El comensal visualiza su pedido y acepta si desea realizarlo.
+•	RFC20. El comensal puede modificar su pedido antes de realizarlo.
+•	RFC21. El comensal puede eliminar su pedido antes de realizarlo.
+6.5.2.	Requisitos No Funcionales.
+ 
+7.	Prototipos de interfaz
+No aplica.
+8.	Glosario
+•	Datos de registro: su email, nombre, apellido, DNI y contraseña.
+•	Comensal: persona ajena al sistema quien hará uso de la app.
+•	Token: numero generado automáticamente como método de validación.
+•	Datos del establecimiento Nombre, Dirección, teléfono y Cuit.
+•	Datos de los mozos: Nombre, apellido, DNI, Número de legajo, y Cuil.
+•	Datos del menú: Nombre del plato y precio del plato.
+•	Datos de las mesas: numero de mesa.
